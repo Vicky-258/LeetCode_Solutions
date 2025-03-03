@@ -5,13 +5,10 @@ class Solution:
 
         curr = 0
 
-        for i in range(len(nums) - 1):
+        for i in range(1, len(nums)):
 
             if nums[i] != nums[curr]:
+                curr += 1
                 nums[curr] = nums[i]
-                curr = i
 
-            if nums[i] == nums[i + 1]:
-                curr = i + 1
-
-        return curr
+        return curr + 1
