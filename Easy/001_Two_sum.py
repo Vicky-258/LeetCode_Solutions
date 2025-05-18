@@ -12,3 +12,5 @@ class Solution:
                 return [seen[diff], i]
 
             seen[nums[i]] = i
+
+        return None
